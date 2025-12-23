@@ -1,12 +1,15 @@
 import { useState } from "react";
+import iphoneBlue from '../img/iphone-blue.jpg';
+import iphoneSilver from '../img/iphone-silver.jpg';
+import iphoneOrange from '../img/iphone-orange.jpg';
 
 function Colors() {
 
     const colors = [
         
-        { id: 'blue', name: 'Titânio Azul', image: import.meta.env.BASE_URL + 'img/iphone-blue.jpg', colorClass: 'bg-blue-500'},
-        { id: 'silver', name: 'Titânio Natural', image: import.meta.env.BASE_URL + 'img/iphone-silver.jpg', colorClass: 'bg-gray-300'},
-        { id: 'orange', name: 'Titânio Laranja', image: import.meta.env.BASE_URL + 'img/iphone-orange.jpg', colorClass: 'bg-orange-500'}  
+        { id: 'blue', name: 'Titânio Azul', image: iphoneBlue, colorClass: 'bg-blue-500'},
+        { id: 'silver', name: 'Titânio Natural', image: iphoneSilver, colorClass: 'bg-gray-300'},
+        { id: 'orange', name: 'Titânio Laranja', image: iphoneOrange, colorClass: 'bg-orange-500'}  
     ];
     
     const models = [
