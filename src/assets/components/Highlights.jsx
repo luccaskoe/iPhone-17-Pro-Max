@@ -16,7 +16,7 @@ function Highlights() {
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
                 <div className="bg-gray-900 rounded-3xl p-8">
-                    <img className="w-full rounded-2xl mb-4" src="/img/titanium-design.jpg" alt="iphone-titanium" />
+                    <img className="w-full rounded-2xl mb-4" src={import.meta.env.BASE_URL + 'img/titanium-design.jpg'} alt="iphone-titanium" />
                     <h3 className="font-bold mb-2 text-3xl">
                         Titânio Premium
                         </h3>
@@ -26,7 +26,7 @@ function Highlights() {
                 </div>
 
                 <div  className="bg-gray-900 rounded-3xl p-8">
-                    <img className="w-full rounded-2xl mb-4" src="/img/ios-features.jpg" alt="ios-2025"/>
+                    <img className="w-full rounded-2xl mb-4" src={import.meta.env.BASE_URL + 'img/ios-features.jpg'} alt="ios-2025"/>
                     <h3  className="font-bold mb-2 text-3xl">
                         IOS 26
                     </h3>
@@ -45,7 +45,7 @@ function Highlights() {
             <p className="text-xl text-gray-300 mb-8">
                 O chip A18 Pro é o mais poderoso do mercado, com uma arquitetura de 64 bits e suporte a gráficos integrados.
             </p>
-            <img className="w-full rounded-2xl mb-4" src="/img/chip-a18-pro.jpg" alt="chip a18"  />
+            <img className="w-full rounded-2xl mb-4" src={import.meta.env.BASE_URL + 'img/chip-a18-pro.jpg'} alt="chip a18"  />
 
             <ul className="space-y-3 text-gray-300 font-bold">
                 <li>• Hexa-core (2 de Desempenho + 4 de Eficiência) com velocidade máxima de 4.26 GHz. </li>
