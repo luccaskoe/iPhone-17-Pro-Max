@@ -2,26 +2,31 @@ import hero from '../img/hero.jpg';
 
 function Hero() {
   return (
-    <section className="relative min-h-fit md:min-h-screen overflow-hidden bg-black">
-      <div className="relative text-center mt-6 md:absolute md:top-24 md:left-1/2 md:-translate-x-1/2 z-0">
-        
-        <img src={hero} className="w-full h-auto md:h-full object-contain md:object-cover md:absolute md:inset-0 opacity-90" />
-         
-         <div className="absolute inset-0 bg-gradient-to-be from-black/30 via-transparent to-black/809"> </div>
+    <section className="relative min-h-screen overflow-hidden bg-black">
+      {/* Background image (full cover, responsivo) */}
+      <img src={hero} alt="iPhone hero" className="absolute inset-0 w-full h-full object-cover opacity-90 z-0" />
+
+      {/* Overlay gradient */}
+      <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-transparent to-black/80 z-10 pointer-events-none"></div>
+
+      {/* Content wrapper (centra conteúdo sobre a imagem) */}
+      <div className="relative z-20 flex items-center justify-center min-h-screen px-4 text-center">
+        {/* Se quiser adicionar título/textos, coloque aqui */}
       </div>
 
-      <div className="absolute bottom-8 left-1/2 z-0 md:z-10 animate-bounce">
+      {/* Scroll indicator */}
+      <div className="absolute bottom-8 left-1/2 z-20 -translate-x-1/2 animate-bounce">
       <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
           viewBox="0 0 24 24"
-          stroke-width="2.5"
+          strokeWidth={2.5}
           stroke="currentColor"
-          class="size-6"
+          className="h-6 w-6"
         >
           <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
+            strokeLinecap="round"
+            strokeLinejoin="round"
             d="M19.5 13.5 12 21m0 0-7.5-7.5M12 21V3"
           />
         </svg>
