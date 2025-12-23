@@ -1,9 +1,11 @@
+import hero from '../img/hero.jpg';
+
 function Hero() {
   return (
     <section className="relative min-h-fit md:min-h-screen overflow-hidden bg-black">
       <div className="relative text-center mt-6 md:absolute md:top-24 md:left-1/2 md:-translate-x-1/2 z-0">
         
-        <img src="/img/hero.jpg" className="w-full h-auto md:h-full object-contain md:object-cover md:absolute md:inset-0 opacity-90" />
+        <img src={hero} className="w-full h-auto md:h-full object-contain md:object-cover md:absolute md:inset-0 opacity-90" />
          
          <div className="absolute inset-0 bg-gradient-to-be from-black/30 via-transparent to-black/809"> </div>
       </div>
